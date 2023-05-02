@@ -1,14 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px 5px;
+    margin: 5px;
     padding: 0%;
 }
 
 /*navigation*/
 
 nav {
-    background-color: rgb(111, 194, 111);
-    height: 75px;
+    background-color: #6cc070;
+    height: 80px;
+    border-style: solid;
+    border-color: #508b50;
+    border-width: 2px;
 }
 
 nav ul {
@@ -24,22 +27,31 @@ nav li {
 }
   
 nav li a {
-    margin: 12px 0px 12px 20px;
+    margin: 13px 0px 12px 20px;
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 30px;
     text-decoration: none;
+    border-style: solid;
+    border-color: #6fc26f;
+    border-width: 1px;
 }
   
 nav li a:hover {
     background-color: #146626;
     color: white;
+    border-style: solid;
+    border-color: #bfe0af;
+    border-width: 1px;
 }
 
 .current-nav {
     background-color: #146626;
     color: white;
+    border-style: solid;
+    border-color: #bfe0af;
+    border-width: 1px;
 }
 
 /*country and income*/
@@ -48,28 +60,24 @@ nav li a:hover {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 0px;
-    font-size: 50px;
+    font-size: 65px;
 }
 
 #title-line {
     color: #146626;
     border-style: dashed;
-    margin: 20px 475px;
+    margin: 30px 525px 20px 525px;
 }
 
-#intro-line {
-    color: #146626;
-    border-style: solid;
-    margin: 0px 650px;
-}
-
-#country-text {
+/*intro*/
+.intro-text {
     text-align: center;
     font-size: 20px;
-    margin: 40px 40px 20px 40px;
+    margin: 40px 40px 0px 40px;
     line-height: 35px;
 }
 
+/*graphs*/
 .graph-paragraph {
     list-style-type: none;
 }
@@ -81,6 +89,10 @@ iframe {
     margin: 60px 30px;
     padding: 10px 20px;
     background-color:mintcream;
+    box-shadow: 4px 4px 8px#9fd7b8;
+    border-style: solid;
+    border-color: #e9f4ee;
+    border-width: 1px;
 }
 
 .graph-text {
@@ -91,12 +103,15 @@ iframe {
     padding: 7.5% 1%;
     float: left;
     background-color: mintcream;
+    border-style: solid;
+    border-color: #dff0e7;
+    border-width: 2px;
 }
 
 .main-line {
-    color: #104a1c;
+    color: #146626;
     border-style: solid;
-    margin: 515px 550px 0px 550px;
+    margin: 520px 500px 0px 500px;
 }
 
 /*index*/
@@ -108,6 +123,82 @@ iframe {
     text-align: center;
 }
 
+/*intro to data*/
+#data {
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#d-title {
+    font-size: 60px;
+    color: #146626;
+    margin: 20px;
+}
+
+#data-text {
+    display: inline-block;
+    background-color: mintcream;
+    padding: 25px;
+    width: 50%;
+    height: 20%;
+    border-style: solid;
+    border-color: #c1d5be;
+    border-width: 2px;
+}
+
+#data-button {
+    display: inline-block;
+    width: 40%;
+    height: 20%;
+}
+
+#data-text p {
+    text-align: left;
+    font-size: 20px;
+}
+
+#data-button ul {
+    list-style-type: none;
+}
+
+#country-button {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 30px;
+    background-color: #137a40;
+    margin: 60px 0px 110px 100px;
+    border-style: double;
+    border-color: white;
+    border-width: 5px;
+}
+
+#income-button {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 30px;
+    background-color: #137a40;
+    margin: 50px 0px 0px 100px;
+    border-style: double;
+    border-color: white;
+    border-width: 5px;
+}
+
+#data-button ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.data-line {
+    color: #146626;
+    border-top: 3px dashed;
+    border-width: 2px;
+    margin: 50px 420px 0px 420px;
+}
+
+/*climate facts*/
 .climate-facts {
     text-align: center;
     background-color: mintcream;
@@ -156,14 +247,61 @@ iframe {
     padding: 10px 82px;
     width: 20%;
 }
+/*solutions*/
+#solutions-wrapper {
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+}
 
+#g-solutions {
+    display: inline-block;
+    margin-left: 60px;
+    padding: 10px 40px;
+    width: 40%;
+    height: 20%;
+}
+
+#wcyd {
+    display: inline-block;
+    padding: 10px 40px;
+    margin-left: 20px;
+    width: 40%;
+    height: 20%;
+}
+
+.s-wcyd-title {
+    font-size: 50px;
+    color: #146626;
+    text-align: center;
+}
+
+#g-solutions ul {
+    margin-left: 75px;
+    list-style-type: square;
+    text-align: left;
+}
+
+#wcyd ul {
+    margin-left: 75px;
+    list-style-type: square;
+    text-align: left;
+}
+
+.vl {
+    display: inline-block;
+    border-left: 2px solid green;
+    height: 300px;
+  }
+
+/*learn more*/
 .learn-more {
-    margin-top: 60px;
-    margin-left: 100px;
+    margin-top: 80px;
+    margin-left: 80px;
 }
 
 #lm-title {
-    font-size: 40px;
+    font-size: 35px;
     color: darkslategrey;
 }
 
@@ -181,6 +319,7 @@ iframe {
     font-weight: bold;
 }
 
+/*copywrite*/
 footer p {
     float: right;
     color: darkslategrey;
